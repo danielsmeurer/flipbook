@@ -1,0 +1,423 @@
+/*Daniel Soares Meurer v2 */
+html{
+	background:#000000;
+}
+body{
+	background:#000000;
+	margin: 0 auto;
+	
+}
+
+h1 {
+	color: #FAF7C9;
+	font-family: Arial, sanserif;
+	font-size: 30px;
+}
+
+#magazine{
+	z-index: 1;	
+	position:absolute;
+	top: 80px;
+	/*width:878.4px;
+	height:620.1px;*/
+	
+}
+
+
+
+#magazine .turn-page{
+	background-color:#ccc;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	
+}
+
+
+#antes {
+	 background: url("img/reward.png");
+	 background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+#antes:hover{
+	background: url("img/reward_hover.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+	
+}
+
+
+
+#prev {
+	z-index:2;
+	 background: url("img/antes.png");
+	 background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 60px;
+	position:absolute;
+	/*left:12%;*/
+	top:350px;
+}
+
+#prev:hover{
+	background: url("img/antes_hover.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 60px;
+	
+}
+
+#nex {
+	z-index:2;
+	background: url("img/depois.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 60px;
+	position:absolute;
+	right:12%;
+	top:350px;
+}
+
+#nex:hover{
+	background: url("img/depois_hover.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 60px;
+}
+
+
+#depois {
+	background: url("img/forward.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+#depois:hover{
+	background: url("img/forward_hover.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+
+
+#first{
+	background: url("img/start.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;	
+}
+
+#first:hover{
+	background: url("img/start_hover.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+
+#last{
+	background: url("img/end.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+#last:hover{
+	background: url("img/end_hover.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+
+#zoom_mais{
+	background: url("img/zoom_mais.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;	
+}
+
+#zoom_mais:hover{
+	background: url("img/zoom_mais_hover.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+#zoom_menos{
+	background: url("img/zoom_menos.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+#zoom_menos:hover{
+	background: url("img/zoom_menos_hover.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+}
+#fit_page{
+	background: url("img/fit.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+#fit_page:hover{
+	background: url("img/fit_hover.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+#full_screen_bt{
+	background: url("img/full.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	border: 0px;
+	padding: 0px;	
+	width: 35px;
+	height: 35px;
+}
+
+#full_screen_bt:hover{
+	background: url("img/full_hover.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+
+#min_screen{
+	background: url("img/min.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	border: 0px;
+	padding: 0px;
+	width: 35px;
+	height: 35px;
+}
+
+#min_screen:hover{
+	background: url("img/min_hover.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+#download{
+	background: url("img/download.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+	color: #FFFFFF ;
+	
+	padding: 10px 17px 10px 17px;	
+	
+}
+
+#link_download{
+	color: #FFFFFF ;
+	text-decoration: none;	
+}
+
+#download:hover{
+	background: url("img/download_hover.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+}
+
+.paginas{	
+	background: url("img/botao.png");
+	background-repeat: no-repeat;
+	width: 52px;
+	height: 60px;
+	border: 0px;
+	padding:10px 17px 9px 17px;	
+	color: #F9F9F9;
+	/*text-align: center;*/
+	/*vertical-align: middle;*/
+	font-family:"Arial",verdana,SanSerif;
+	font-size: 27px;
+	/*line-height: 50px;*/	
+	font-weight: bold;
+}
+
+.paginas:hover{
+	background: url("img/botao_hover.png");
+	background-repeat: no-repeat;
+}
+
+.bt {
+	
+	width: 520px;
+	position:absolute;
+	left: 30px;
+	
+	top:720px;
+}
+
+#pagina{
+	color: #727272;
+	text-align: center;
+	height: 25px;
+	width: 60px;
+	border-width: 1px;
+	border-color: #C4C4C4;	
+}
+
+#atual{
+	background: url("img/botao_hover.png");
+	background-repeat: no-repeat;
+	width: 52px;
+	height: 60px;
+	border: 0px;
+	padding:10px 17px 9px 17px;	
+	color: #F9F9F9;
+	/*text-align: center;*/
+	/*vertical-align: middle;*/
+	font-family:"Arial",verdana,SanSerif;
+	font-size: 27px;
+	/*line-height: 50px;*/	
+	font-weight: bold;
+}
+
+#menu_container{
+	z-index:2;	
+	width: 100%;
+	height: 70px;
+	background: #0178a3;
+	position:fixed;	
+	top: 0px;
+	
+	/*top:695px;
+	left: 20%;*/
+	
+}
+
+menu{
+	width: 400px;	
+	
+}
+/*
+#download{
+	text-decoration: none;
+}
+*/
+#constraint { width: 100%; height:100%; border:2px solid #ccc; padding: 10px; }
+
+label {
+    display: inline-block;
+    width: 5em;
+ }
